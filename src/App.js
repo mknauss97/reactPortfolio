@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/header/header';
 import Navbar from './components/navbar/navbar';
 import Project from './pages/project';
@@ -12,9 +12,10 @@ function App() {
     <Router>
       <Header />
       <Navbar />
-      <Route exact path ='/' component={About} />
-      <Route exact path ='/project' component={Project} />
-
+      <Switch>
+      <Route exact path="/" component={About} />
+      <Route exact path="/projects" component={Project} />
+    </Switch>
       <Footer />
     </Router>
   );

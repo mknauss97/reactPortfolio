@@ -2,23 +2,24 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    <nav className="navbar navbar-expand-lg justify-content-center ">
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="d-flex" id="navbarText">
-            <ul className="navbar-nav mr-auto">
-                <li className="nav-item active">
-                    <Link className="nav-link" to="/">About Me</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/projects">Projects</Link>
-                </li>
+    return (
+        <nav className="navbar navbar-expand-lg bg-dark">
+        <div className="container-fluid">
+        
+          <a className="navbar-brand" href='/'>MERN Google Books</a>
+          <div className="empty" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="link" to="/">Search</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="link" to="/saved">Saved</Link>
+              </li>
             </ul>
-
+          </div>
         </div>
-    </nav>
-}
+      </nav>
+          )
+      }
 
 export default Navbar;
