@@ -11,6 +11,20 @@ const About = () => {
                     I loved working with animals but saw what the strain does to your body after awhile. I currently work as a Steak Expert at a Omaha Steaks retail store.
                     I am currently a student at Case Western Reserve for Full Stack Web Development.</p>
             </div>
+            <ul>
+            <li>
+                <a>Email:</a> <a href="mailto: mknauss97@gmail.com">Mknauss97@gmail.com</a>
+            </li>
+            <li>
+                <a>GitHub:</a><a href="https://github.com/mknauss97">Mknauss97</a>
+            </li>
+            <li>
+                <a>LinkedIn:</a><a href="https://www.linkedin.com/in/megan-knauss-a53355204/">Megan Knauss</a>
+            </li>
+            <li>
+                <a href="https://1drv.ms/w/s!AiWrSd_MMYJ0yytbQ5RExHNMDzpA?e=1ehPXi">Resume</a>
+            </li>
+            </ul>
         </div>
     )
 }
