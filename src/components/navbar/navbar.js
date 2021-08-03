@@ -3,21 +3,18 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-dark">
-        <div className="container-fluid">
-        
-          <a className="navbar-brand" href='/'>MERN Google Books</a>
+        <nav className="navbar navbar-expand-lg justify-content-center display-inline-block">
           <div className="empty" id="navbarNav">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <Link className="link" to="/">Search</Link>
+                <Link className="link" to="/">About Me</Link>
               </li>
               <li className="nav-item">
-                <Link className="link" to="/saved">Saved</Link>
+                <Link className="link" to="/projects">Projects</Link>
               </li>
             </ul>
           </div>
-        </div>
+        
       </nav>
           )
       }

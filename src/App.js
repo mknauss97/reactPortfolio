@@ -10,6 +10,7 @@ import Footer from './components/footer/footer';
 function App() {
   return (
     <Router>
+      <div className="App image">
       <Header />
       <Navbar />
       <Switch>
@@ -17,6 +18,7 @@ function App() {
       <Route exact path="/projects" component={Project} />
     </Switch>
       <Footer />
+      </div>
     </Router>
   );
 }
